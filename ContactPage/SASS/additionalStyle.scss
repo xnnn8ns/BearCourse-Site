@@ -1,0 +1,19 @@
+$colorBg: #FFEE2F;
+$colorIconBg: #E8D935;
+$colorButtonHeader: #000;
+$colorButtonHeaderActive: #FF0000;
+$colorBtn: #CE0002;
+$colorCardP: #938700;
+$colorSpecialP: #646464;
+$colorFooter: #7E7E7E;
+
+@mixin titleText {
+    text-transform: uppercase;
+    font-size: 64px;
+    font-weight: 700;
+}
+
+@mixin TitleP {
+    font-size: 24px;
+    font-weight: 400;
+}

@@ -1,0 +1,230 @@
+@import 'nullstyle';
+@import 'additionalStyle';
+
+.container {
+    max-width: 94%;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+
+    .logo {
+        max-width: 135px;
+        max-height: 75px;
+    }
+
+    .nav {
+        display: flex;
+        align-items: center;
+
+        &__button {
+            max-width: 220px;
+            color: $colorButtonHeader;
+            font-size: 20px;
+            font-weight: 600;
+            margin-right: 56px;
+            padding: 10px 0;
+        }
+
+        &__button:nth-child(2) {
+            color: $colorButtonHeaderActive;
+        }
+
+        &__button:last-child {
+            margin: 0;
+            font-size: 28px;
+        }
+    }
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+
+    a {
+        margin-bottom: 18px;
+    }
+
+    a:last-child {margin: 0;}
+}
+
+.description, .project {
+    display: flex;
+    justify-content: space-between;
+
+    .social-media {
+        margin-right: 68px;
+    }
+
+    &__title {
+        display: flex;
+        margin-top: 236px;
+
+        h1 {
+            @include titleText;
+            margin-bottom: 38px;
+        }
+
+        p {
+            @include TitleP;
+            max-width: 606px;
+        }
+
+        .title__btn {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+
+            .btn {
+                display: flex;
+                align-items: center;
+                background-color: $colorBtn;
+                padding: 20px 35px;
+                font-size: 24px;
+                color: #fff;
+                font-weight: 600;
+
+                p {
+                    max-width: 150px;
+                    height: 56px;
+                }
+
+                img {
+                    margin-left: 10px;
+                    padding-bottom: 6px;
+                }
+            }
+        }
+    }
+
+    &__image {
+        margin-top: 77px;
+        width: 51%;
+
+        img {
+            max-width: 100%;
+        }
+    }
+}
+
+.project{
+    &__title {
+        margin-top: 224px;
+        width: 49%;
+    }
+    &__image {
+        margin-top: 138px;
+        width: 50%;
+        img {
+            max-width: 100%;
+        }
+    }
+
+    .title__btn{
+        margin-top: 48px;
+        .btn {
+            flex-direction: column;
+            padding: 15px 30px;
+
+            p {
+                height: 26px;
+            }
+            img {
+                margin: 0 25px 0 0;
+            }
+        }
+    }
+}
+
+.project:first-child {
+    &__title {margin-top: 196px;}
+    &__image {
+        margin-top: 128px;
+    }
+}
+
+.btnMore {
+    display: flex;
+    align-items: center;
+    margin-top: 114px;
+
+    .btn {
+        display: flex;
+        align-items: center;
+        background-color: $colorBtn;
+        padding: 20px 28px;
+        font-size: 24px;
+        color: #fff;
+        font-weight: 600;
+
+        p {
+            max-width: 150px;
+        }
+
+        img {
+            padding-bottom: 15px;
+        }
+    }
+}
+
+.btnToUp {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 15px;
+
+    .btn {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: #000;
+        padding: 15px 9px;
+        font-size: 22px;
+        color: #fff;
+        font-weight: 600;
+
+        p {
+            max-width: 65px;
+        }
+        
+        img {
+            margin-bottom: 8px;
+        }
+    }
+}
+
+.footer {
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    color: $colorFooter;
+    font-size: 16px;
+
+    .nav {
+        display: flex;
+        align-items: center;
+
+        &__button {
+            margin-right: 32px;
+            color: $colorFooter;
+        }
+
+        &__button:last-child {
+            margin: 0;
+        }
+    }
+
+    .social-media {
+        flex-direction: row;
+        a {margin: 0 0 0 11px;}
+        a:first-child {margin-left: 0;}
+    }
+}
