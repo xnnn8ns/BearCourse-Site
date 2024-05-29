@@ -135,7 +135,7 @@ header .nav__button {
   margin-right: 56px;
   padding: 10px 0;
 }
-header .nav__button:nth-child(2) {
+header .nav__button:nth-child(4) {
   color: #FF0000;
 }
 header .nav__button:last-child {
@@ -159,7 +159,7 @@ header .nav__button:last-child {
   margin: 0;
 }
 
-.description, .project {
+.description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -167,27 +167,27 @@ header .nav__button:last-child {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.description .social-media, .project .social-media {
+.description .social-media {
   margin-right: 68px;
 }
-.description__title, .project__title {
+.description__title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 236px;
 }
-.description__title h1, .project__title h1 {
+.description__title h1 {
   text-transform: uppercase;
   font-size: 64px;
   font-weight: 700;
   margin-bottom: 38px;
 }
-.description__title p, .project__title p {
+.description__title p {
   font-size: 24px;
   font-weight: 400;
   max-width: 606px;
 }
-.description__title .title__btn, .project__title .title__btn {
+.description__title .title__btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -196,7 +196,7 @@ header .nav__button:last-child {
           align-items: center;
   margin-top: 20px;
 }
-.description__title .title__btn .btn, .project__title .title__btn .btn {
+.description__title .title__btn .btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -209,55 +209,66 @@ header .nav__button:last-child {
   color: #fff;
   font-weight: 600;
 }
-.description__title .title__btn .btn p, .project__title .title__btn .btn p {
+.description__title .title__btn .btn p {
   max-width: 150px;
-  height: 56px;
 }
-.description__title .title__btn .btn img, .project__title .title__btn .btn img {
+.description__title .title__btn .btn img {
   margin-left: 10px;
-  padding-bottom: 6px;
+  padding-bottom: 18px;
 }
-.description__image, .project__image {
+.description__image {
   margin-top: 77px;
   width: 51%;
 }
-.description__image img, .project__image img {
+.description__image img {
   max-width: 100%;
 }
 
-.project__title {
-  margin-top: 224px;
-  width: 49%;
+.job h1 {
+  text-transform: uppercase;
+  font-size: 64px;
+  font-weight: 700;
+  margin: 64px 0 64px 102px;
 }
-.project__image {
-  margin-top: 138px;
-  width: 50%;
+.job__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
-.project__image img {
-  max-width: 100%;
+.job__content .social-media {
+  margin-right: 70px;
 }
-.project .title__btn {
-  margin-top: 48px;
+.job__content .job__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 94%;
 }
-.project .title__btn .btn {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 15px 30px;
+.job__content .job__card .job__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  margin: 0 56px 48px 0;
+  background-color: #F5F5F5;
+  color: #000;
+  width: 505px;
+  height: 505px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
-.project .title__btn .btn p {
-  height: 26px;
+.job__content .job__card .job__item h1 {
+  text-transform: none;
+  font-size: 32px;
+  margin: 0 0 29px 40px;
 }
-.project .title__btn .btn img {
-  margin: 0 25px 0 0;
-}
-
-.project:first-child__title {
-  margin-top: 196px;
-}
-.project:first-child__image {
-  margin-top: 128px;
+.job__content .job__card .job__item:hover {
+  background-color: #CE0002;
+  color: #fff;
 }
 
 .btnMore {
@@ -267,7 +278,7 @@ header .nav__button:last-child {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 114px;
+  margin: 59px 0 0 102px;
 }
 .btnMore .btn {
   display: -webkit-box;
@@ -296,7 +307,7 @@ header .nav__button:last-child {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
-  margin-bottom: 15px;
+  margin-bottom: 18px;
 }
 .btnToUp .btn {
   display: -webkit-box;
@@ -383,6 +394,10 @@ header .nav__button:last-child {
     display: -ms-flexbox;
     display: flex;
   }
+  .job__content .job__card .job__item {
+    width: 400px;
+    height: 400px;
+  }
 }
 @media (min-width: 1440px) {
   .nav__button:nth-child(7) {
@@ -392,5 +407,9 @@ header .nav__button:last-child {
   }
   .nav__button:nth-child(8) {
     display: none;
+  }
+  .job__content .job__card .job__item {
+    width: 505px;
+    height: 505px;
   }
 }

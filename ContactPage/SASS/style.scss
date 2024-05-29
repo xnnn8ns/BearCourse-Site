@@ -10,12 +10,15 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+a {transition: transform 0.3s ease;}
+
+a:hover {transform: scale(1.1);}
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 120px;
-    margin-bottom: 84px;
 
     .logo {
         max-width: 135px;
@@ -35,7 +38,7 @@ header {
             padding: 10px 0;
         }
 
-        &__button:last-child {
+        &__button:nth-child(6) {
             color: $colorButtonHeaderActive;
         }
 
@@ -57,18 +60,17 @@ header {
     a:last-child {margin: 0;}
 }
 
-.aboutUs {
+.main {
     display: flex;
-    align-items: flex-start;
     justify-content: space-between;
 
     .social-media {
-        margin-right: 22px;
+        margin-right: 68px;
     }
 
     &__title {
         display: flex;
-        margin-top: 196px;
+        margin-top: 236px;
 
         h1 {
             @include titleText;
@@ -82,75 +84,13 @@ header {
     }
 
     &__image {
-        margin-top: 128px;
+        margin-top: 77px;
         width: 51%;
-        h1 {
-            @include titleText;
-            margin-bottom: 44px;
-        }
 
-        .image__content {
-            display: flex;
-            justify-content: space-between;
-            max-width: 784px;
-            flex-wrap: wrap;
-
-            .image__item {
-                height: 245px;
-                margin-bottom: 75px;
-
-                .item__icon {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    width: 137px;
-                    height: 137px;
-                    background-color: $colorIconBg;
-                    margin-bottom: 18px;
-                }
-
-                .item__text {
-                    h2 {
-                        font-size: 44px;
-                        font-weight: 900;
-                        margin-bottom: 9px;
-                    }
-                    p {
-                        font-size: 24px;
-                        font-weight: 600;
-                        color: $colorCardP;
-                    }
-                }
-            }
+        img {
+            max-width: 100%;
         }
     }
 }
 
-.footer {
-    display: flex;
-    height: 80px;
-    justify-content: space-between;
-    align-items: center;
-    color: $colorFooter;
-    font-size: 16px;
-
-    .nav {
-        display: flex;
-        align-items: center;
-
-        &__button {
-            margin-right: 32px;
-            color: $colorFooter;
-        }
-
-        &__button:last-child {
-            margin: 0;
-        }
-    }
-
-    .social-media {
-        flex-direction: row;
-        a {margin: 0 0 0 11px;}
-        a:first-child {margin-left: 0;}
-    }
-}
+@import 'adaptive'

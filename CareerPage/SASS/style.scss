@@ -10,6 +10,12 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+a {transition: transform 0.3s ease;}
+button {transition: transform 0.3s ease;}
+
+a:hover {transform: scale(1.1);}
+button:hover {transform: scale(1.1);}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -234,3 +240,5 @@ header {
         a:first-child {margin-left: 0;}
     }
 }
+
+@import 'adaptive'

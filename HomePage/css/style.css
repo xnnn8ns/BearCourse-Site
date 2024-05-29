@@ -79,6 +79,30 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+a {
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+button {
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -294,6 +318,7 @@ header .nav__button:last-child {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  overflow: hidden;
   max-width: 94%;
 }
 .bestSpec__content .bestSpec__card .bestSpec__item {
@@ -375,4 +400,53 @@ header .nav__button:last-child {
 }
 .footer .social-media a:first-child {
   margin-left: 0;
+}
+
+@media (max-width: 1250px) {
+  header .nav__button {
+    margin-right: 32px;
+  }
+}
+@media (min-width: 1250px) {
+  header .nav__button {
+    margin-right: 56px;
+  }
+}
+@media (max-width: 1440px) {
+  .nav__button:nth-child(7) {
+    display: none;
+  }
+  .nav__button:nth-child(8) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .aboutUs__image {
+    width: 55%;
+  }
+  .aboutUs__image .image__content .image__item .item__text h2 {
+    font-size: 36px;
+  }
+  .aboutUs__image .image__content .image__item .item__text p {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1440px) {
+  .nav__button:nth-child(7) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .nav__button:nth-child(8) {
+    display: none;
+  }
+  .aboutUs__image {
+    width: 51%;
+  }
+  .aboutUs__image .image__content .image__item .item__text h2 {
+    font-size: 44px;
+  }
+  .aboutUs__image .image__content .image__item .item__text p {
+    font-size: 24px;
+  }
 }

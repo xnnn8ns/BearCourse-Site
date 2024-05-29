@@ -1,0 +1,31 @@
+@media (max-width: 1250px) {
+    header .nav__button {margin-right: 32px;}
+}
+@media (min-width: 1250px) {
+    header .nav__button {margin-right: 56px;}
+}
+@media (max-width: 1440px) {
+    .nav__button:nth-child(7) {
+        display: none;
+    }
+    .nav__button:nth-child(8) {
+        display: flex;
+    }
+    .job__content .job__card .job__item {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .nav__button:nth-child(7) {
+        display: flex;
+    }
+    .nav__button:nth-child(8) {
+        display: none;
+    }
+    .job__content .job__card .job__item {
+        width: 505px;
+        height: 505px;
+    }
+}
