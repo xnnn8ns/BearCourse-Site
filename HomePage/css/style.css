@@ -432,6 +432,7 @@ header .nav__button:last-child {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin: 0;
   }
   .aboutUs__image {
     width: 55%;
@@ -448,6 +449,8 @@ header .nav__button:last-child {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin: 0;
+    font-size: 24px;
   }
   .nav__button:nth-child(8) {
     display: none;

@@ -382,6 +382,7 @@ header .nav__button:last-child {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin: 0;
   }
 }
 @media (min-width: 1440px) {
@@ -389,6 +390,8 @@ header .nav__button:last-child {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin: 0;
+    font-size: 24px;
   }
   .nav__button:nth-child(8) {
     display: none;

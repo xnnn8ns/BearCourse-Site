@@ -11,12 +11,15 @@
     }
     .nav__button:nth-child(8) {
         display: flex;
+        margin: 0;
     }
 }
 
 @media (min-width: 1440px) {
     .nav__button:nth-child(7) {
         display: flex;
+        margin: 0;
+        font-size: 24px;
     }
     .nav__button:nth-child(8) {
         display: none;
