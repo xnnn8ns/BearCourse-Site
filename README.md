@@ -1,4 +1,3 @@
-# BearCourse
 <h1>BearCourse Site</h1>
 
 <h3 align="left">Языки и инструменты:</h3>
