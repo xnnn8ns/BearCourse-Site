@@ -113,14 +113,10 @@ header {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-
-    .social-media {
-        margin-right: 22px;
-    }
+    margin-top: 196px;
 
     &__title {
         display: flex;
-        margin-top: 196px;
 
         h1 {
             @include titleText;
@@ -134,8 +130,8 @@ header {
     }
 
     &__image {
-        margin-top: 128px;
         width: 51%;
+
         h1 {
             @include titleText;
             margin-bottom: 44px;
@@ -144,7 +140,6 @@ header {
         .image__content {
             display: flex;
             justify-content: space-between;
-            max-width: 784px;
             flex-wrap: wrap;
 
             .image__item {
@@ -180,9 +175,10 @@ header {
 
 .bestSpec {
     margin-bottom: 64px;
+    
     h1 {
         @include titleText;
-        margin: 64px 0 64px 102px;
+        margin: 64px 0 64px 0;
     }
 
     &__content {

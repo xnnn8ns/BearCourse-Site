@@ -113,7 +113,7 @@ header {
 
     &__image {
         margin-top: 77px;
-        width: 51%;
+        // width: 51%;
 
         img {
             max-width: 100%;
@@ -124,8 +124,13 @@ header {
 .project{
     &__title {
         margin-top: 224px;
-        width: 49%;
     }
+
+    .needOts {
+        width: 50%;
+        margin-left: 32px;
+    }
+    
     &__image {
         margin-top: 138px;
         width: 50%;
@@ -143,10 +148,20 @@ header {
             p {
                 height: 26px;
             }
-            img {
-                margin: 0 25px 0 0;
-            }
         }
+    }
+
+    .RightArrow {
+        img {
+            margin: 0 25px 0 0;
+        }
+    }
+
+    .LeftArrow {
+        img {
+            margin: 0 0 0 30px;
+        }
+    
     }
 }
 

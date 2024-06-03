@@ -151,7 +151,7 @@ header .nav__button:last-child {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 236px;
+  margin: 236px 0 192px;
 }
 .main .social-media {
   margin-right: 68px;
@@ -240,6 +240,48 @@ header .nav__button:last-child {
   font-size: 24px;
   font-weight: 400;
   padding-left: 20px;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 80px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #7E7E7E;
+  font-size: 16px;
+}
+.footer .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer .nav__button {
+  margin-right: 32px;
+  color: #7E7E7E;
+}
+.footer .nav__button:last-child {
+  margin: 0;
+}
+.footer .social-media {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.footer .social-media a {
+  margin: 0 0 0 11px;
+}
+.footer .social-media a:first-child {
+  margin-left: 0;
 }
 
 @media (max-width: 1250px) {

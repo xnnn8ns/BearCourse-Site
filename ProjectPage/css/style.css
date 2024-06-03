@@ -219,7 +219,6 @@ header .nav__button:last-child {
 }
 .description__image, .project__image {
   margin-top: 77px;
-  width: 51%;
 }
 .description__image img, .project__image img {
   max-width: 100%;
@@ -227,7 +226,10 @@ header .nav__button:last-child {
 
 .project__title {
   margin-top: 224px;
-  width: 49%;
+}
+.project .needOts {
+  width: 50%;
+  margin-left: 32px;
 }
 .project__image {
   margin-top: 138px;
@@ -249,8 +251,11 @@ header .nav__button:last-child {
 .project .title__btn .btn p {
   height: 26px;
 }
-.project .title__btn .btn img {
+.project .RightArrow img {
   margin: 0 25px 0 0;
+}
+.project .LeftArrow img {
+  margin: 0 0 0 30px;
 }
 
 .project:first-child__title {

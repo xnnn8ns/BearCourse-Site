@@ -222,15 +222,12 @@ header .nav__button:last-child {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-.aboutUs .social-media {
-  margin-right: 22px;
+  margin-top: 196px;
 }
 .aboutUs__title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 196px;
 }
 .aboutUs__title h1 {
   text-transform: uppercase;
@@ -244,7 +241,6 @@ header .nav__button:last-child {
   max-width: 606px;
 }
 .aboutUs__image {
-  margin-top: 128px;
   width: 51%;
 }
 .aboutUs__image h1 {
@@ -260,7 +256,6 @@ header .nav__button:last-child {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-width: 784px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -301,7 +296,7 @@ header .nav__button:last-child {
   text-transform: uppercase;
   font-size: 64px;
   font-weight: 700;
-  margin: 64px 0 64px 102px;
+  margin: 64px 0 64px 0;
 }
 .bestSpec__content {
   display: -webkit-box;
