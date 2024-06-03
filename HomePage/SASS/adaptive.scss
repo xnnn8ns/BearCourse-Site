@@ -1,3 +1,10 @@
+@media (max-width: 1150px) {
+    .aboutUs {display: block;}
+}
+@media (min-width: 1150px) {
+    .aboutUs{display: flex;}
+}
+
 @media (max-width: 1250px) {
     header .nav__button {margin-right: 32px;}
 }

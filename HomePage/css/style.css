@@ -402,6 +402,18 @@ header .nav__button:last-child {
   margin-left: 0;
 }
 
+@media (max-width: 1150px) {
+  .aboutUs {
+    display: block;
+  }
+}
+@media (min-width: 1150px) {
+  .aboutUs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 @media (max-width: 1250px) {
   header .nav__button {
     margin-right: 32px;
